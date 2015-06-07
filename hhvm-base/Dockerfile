@@ -9,8 +9,6 @@ RUN yum -y install cpp gcc-c++ cmake git psmisc {binutils,boost,jemalloc}-devel 
     {unixODBC,expat,mariadb}-devel lib{edit,curl,xml2,xslt}-devel \
     glog-devel oniguruma-devel ocaml gperf enca libjpeg-turbo-devel make
 
-ADD https://github.com/facebook/hhvm/archive/HHVM-3.7.1.tar.gz /tmp/
-
 WORKDIR /tmp
 
 RUN git clone https://github.com/facebook/hhvm -b HHVM-3.7 hhvm --recursive

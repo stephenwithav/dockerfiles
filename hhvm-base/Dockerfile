@@ -13,4 +13,4 @@ ADD https://github.com/facebook/hhvm/archive/HHVM-3.7.1.tar.gz /tmp/
 
 WORKDIR /tmp
 
-RUN tar xzf HHVM-3.7.1.tar.gz
+RUN git clone https://github.com/facebook/hhvm -b HHVM-3.7 hhvm --recursive

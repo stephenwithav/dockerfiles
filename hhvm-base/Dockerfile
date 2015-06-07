@@ -11,4 +11,4 @@ RUN yum -y install cpp gcc-c++ cmake git psmisc {binutils,boost,jemalloc}-devel 
 
 WORKDIR /tmp
 
-RUN git clone https://github.com/facebook/hhvm -b HHVM-3.7 hhvm --recursive
+RUN git clone https://github.com/facebook/hhvm -b HHVM-3.7.1 hhvm --recursive
